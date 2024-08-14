@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!---->
+    <style>
+        body{
+            background-color: #F5F8F9;
+        }
+                .nav{
+            height:80px;
+            
+        }
+        .logo{
+    width:400px;
+    height:70px;
+    margin:0 auto;
+  
+}
+.lion{
+    width: 50px;
+    height:70px;
+    
+    float:left;
+}
+.digi{
+    width:200px;
+    height:70px;
+    
+    float:left;
+}
+.g{
+    width:100px;
+    height:70px;
+   
+    float:left;
+}
+.emble{
+    width:60%;
+    height:50px;
+    margin-top:10px;
+    margin-left:15px;
+}
+.locker{
+    width:90%;
+    height:50px;
+    margin-top:10px;
+}
+.dlg{
+    width:70%;
+    height:40px;
+    margin-top: 15px;
+}
+.page{
+    width:50%;
+    height:400px;
+    
+    margin :0 auto;
+}
+.form{
+    width:70%;
+    height:350px;
+    
+    margin:0 auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.slider{
+    width:70%;
+    height:40px;
+    
+    margin:40px auto;
+    
+}
+#btn{
+    width:45%;
+    background-color:#007BFF ;
+    height:40px;
+    color:white;
+    border: none;
+   
+}
+#btns{
+    width:45%;
+    color:#007BFF;
+    height:40px;
+    background-color: white;
+    border:none;
+   
+}
+.names{
+    width:80%;
+    margin-top:0px;
+    margin-left:45px;
+    height: 40px;
+    outline: white;
+    border: 1px solid #CED4DA;
+    padding-left: 10px;
+}
+#btnss{
+    width:80%;
+    margin-top:20px;
+    margin-left:45px;
+    height: 40px;
+    background-color:#0069D9;
+    color:white;
+    border: none;
+}
+#btnss:hover{
+    background-color: #0069D9;
+    color:white;
+}
+.footer{
+    height:400px;
+    
+    background-color: #08192B;
+}
+.fmain{
+    width:80%;
+    height: 380px;
+
+    margin:18px auto;
+}
+.fone{
+    width:33%;
+    height:380px;
+  
+    float:left;
+    margin-left: 2px;
+}
+.flogo{
+    width:100%;
+    height:100px;
+   
+    float:left;
+}
+.flwrite{
+    width:100%;
+    height:130px;
+   
+    float:left;
+}
+.fsocial{
+    width:100%;
+    height:50px;
+   
+    float:left;
+}
+.face{
+    width:50px;
+    height:50px;
+   
+    float:left;
+    margin-left: 10px; 
+}
+
+.tags{
+    width:50%;
+    height:380px;
+    
+    float:left;
+}
+.li{
+    color:white;
+    padding-top: 10px;
+}
+ul{
+    list-style: none;
+}
+.litag{
+    color:white;
+    text-decoration: none;
+    padding-left: 25px;
+}
+.litags{
+    color:white;
+    text-decoration: none;
+    padding-left: 25px;
+   
+}
+.litag:hover{
+    color:#ACB5FB;
+}
+.litags:hover{
+    color:#ACB5FB;
+}
+
+
+
+@media only screen and (max-width:768px){
+    .page{
+        width:100%;
+    }
+    .form{
+        width:100%;
+    }
+    .footer{
+    height:1200px;
+   }
+   .fmain{
+    width:100%;
+    height:1200px;
+   }
+   .fone{
+    width:100%;
+   }
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+             <!---nav-->
+             <div class="col-lg-12 nav">
+                <div class="logo">
+                    <a href="index.html"><div class="lion">
+                        <img src="img/emblem new.png" class="emble">
+                    </div>
+                    <div class="digi">
+                        <img src="img/digilocker_logo_new.png" class="locker">
+                    </div>
+                    <div class="g">
+                        <img src="img/dlg20_logo.png" class="dlg">
+                    </div>
+                </div></a>
+            </div>
+
+            <!--page-->
+            <div class="page">
+                <div class="form shadow">
+
+                    <h4 style="text-align: center; padding-top: 10px;">Sign In to your account!</h4>
+                    <div class="slider">
+                        <button id="btn">MOBILE</button>
+                        <a href="signinwithadhar.html"><button id="btns">Adhar/username</button></a>
+                    </div>
+                     <!--mobile number-->
+                     <input type="number" placeholder="Mobile Number" class="names" id="mnum" onblur="dte()" oninput="etd()">
+
+                     <input type="button" value="SUBMIT" id="btnss">
+                     <p style="text-align: center; font-size: 15px; color:#b19780;">I agree to the DigiLocker <a href="#">Terms of Service</a></p>
+                </div>
+            </div>
+
+
+            
+
+            <!--footer-->
+            <div class="col-lg-12 footer">
+                <div class="fmain">
+                    <div class="fone">
+                        <div class="flogo">
+                            <img src="img/lastlogo.png" style="width: 70%; margin-top: 20px; margin-left: 10px;">
+                        </div>
+
+                       
+                        <div class="flwrite">
+                            <p style="color:#AAB1B8;padding-left: 10px;">DigiLocker aims at ‘Digital Empowerment’<br>
+                                 of the citizen by providing access to <br>authentic digital documents to the citizen’s<br> digital document wallet.</p>
+                        </div>
+                        
+                        <div class="fsocial">
+                            <h4 style="color:#AAB1B8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">FOLLOW US:</h4>
+                        </div>
+
+                        <div class="fsocial">
+                            <div class="face"><i class="fa fa-facebook-f" style="background-color: blue; font-size: 30px; padding-left: 20px;padding-top: 5px; 
+                           "></i></div>
+                            <div class="face">
+                                <i class="fa fa-twitter-square" style=" color:#1DA1F2; font-size: 30px; padding-left: 10px;padding-top: 5px; 
+                           "></i>
+                            </div>
+                            <div class="face">
+                                <i class="fa fa-linkedin" style="color:#0077B5; font-size: 30px; padding-left: 10px;padding-top: 5px; 
+                           "></i>
+                            </div>
+                            <div class="face">
+                                <i class="fa fa-youtube-play" style="color:#FF0000; font-size: 30px; padding-left: 10px;padding-top: 5px; 
+                           "></i>
+                            </div>
+                        </div>
+                   
+                    </div>
+
+                    <div class="fone">
+                        <div class="tags">
+                            <ul>
+                                <li class="li"><a href="#" class="litags">Home     </a> </li>
+                                <li class="li"><a href="#" class="litag">About us </a></li>
+                                <li class="li"><a href="#" class="litag">FAQs     </a></li>
+                                <li class="li"><a href="#" class="litag">Statics  </a> </li>
+                                <li class="li"><a href="#" class="litag">Resources</a>   </li>
+                                <li class="li"><a href="#" class="litag">Circular </a>  </li>
+                                <li class="li"><a href="#" class="litag">Sitemaps </a>  </li>
+                                <li class="li"><a href="#" class="litag">Carrer   </a> </li>
+                            </ul>
+                        </div>
+
+                        <div class="tags">
+                            <ul>
+                                <li class="li"><a href="#" class="litags">Need Help     </a> </li>
+                                <li class="li"><a href="#" class="litag">Blog</a></li>
+                                <li class="li"><a href="#" class="litag">Feedback    </a></li>
+                                <li class="li"><a href="#" class="litag">Credit  </a> </li>
+                                <li class="li"><a href="#" class="litag">Partners</a>   </li>
+                                <li class="li"><a href="#" class="litag">Tenders </a>  </li>
+                                <li class="li"><a href="#" class="litag">Meri Pehchan </a>  </li>
+                                <li class="li"><a href="#" class="litag">DigiLocker Service   </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="fone">
+                        <div class="flogo">
+                            <p style="float:left; color:#AAA794; font-size: 20px; padding-top: 20px;">Powered By</p><img src="img/digital-india-logo.png" style="width: 40%; margin-top: 20px; margin-left: 10px;">
+                        </div>
+
+                       
+                        <div class="flwrite">
+                            <p style="color:#AAB1B8;padding-left: 10px;">Digital India Corporation(DIC)<br>
+                                Ministry of Electronics & IT <br>(MeitY) Government of India</p>
+                        </div>
+                        
+                        <div class="fsocial">
+                            <h4 style="color:#AAB1B8; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">DOWNLOAD APP</h4>
+                        </div>
+
+                        <div class="fsocial">
+                            <img src="img/playstore_2.png" style="width:100px; margin-left:20px; float:left;">
+                            <img src="img/ios_1.png" style="width:100px; margin-left:20px; float:left;">
+                        </div>
+                    </div>
+                
+                
+                </div>
+            </div>
+
+            <!--close tags-->
+        </div>
+    </div>
+</body>
+</html>
